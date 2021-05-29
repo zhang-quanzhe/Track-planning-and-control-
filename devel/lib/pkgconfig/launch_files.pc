@@ -1,0 +1,8 @@
+prefix=/home/ustb814/car/devel
+
+Name: launch_files
+Description: Description of launch_files
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

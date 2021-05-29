@@ -1,0 +1,8 @@
+prefix=/home/ustb814/car/devel
+
+Name: cancontrol
+Description: Description of cancontrol
+Version: 0.0.0
+Cflags: -I/home/ustb814/car/src/cancontrol/include
+Libs: -L${prefix}/lib -lcancontrol
+Requires: roscpp rospy std_msgs

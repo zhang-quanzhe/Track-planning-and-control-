@@ -1,0 +1,8 @@
+prefix=/home/ustb814/car/install
+
+Name: cancontrol_ultra
+Description: Description of cancontrol_ultra
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcancontrol_ultra
+Requires: roscpp rospy std_msgs

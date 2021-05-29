@@ -1,0 +1,10 @@
+<launch>
+
+<include file="$(find launch_files)/launch/sbg_ellipse.launch" />
+
+  <node name="odom_tf" pkg="odom_tf" type="odom_tf" respawn="true">
+
+</node>
+
+ <node name="rviz" pkg="rviz" type="rviz" args="-d /home/buaa/buaacar_ws/src/config/odom_tf.rviz" required="false" />
+</launch>

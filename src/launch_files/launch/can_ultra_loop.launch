@@ -1,0 +1,9 @@
+<launch>
+  <node name="cancontrol_ultra_loop" pkg="cancontrol_ultra" type="cancontrol_ultra_loop" respawn="true" />
+
+  <node name="ultra_publish" pkg="ultra_serial_port" type="ultra_publish" respawn="true" />
+
+
+
+</launch>
+

@@ -1,0 +1,12 @@
+1. 列表所有串口
+ls /dev/ttyUSB*
+2. 设置所有串口权限
+sudo chmod 777 /dev/ttyUSB0
+3. 输出串口使用 cat +串口信息命令
+4. 如果使用串口工具推荐使用 CuteCom,自行百度教程
+5. 将sbg_ros放在src目录下进行catkin_make处理得到ros工程
+6. 运行步骤：1) 打开一个窗口source devel/setup.bash
+	    2) 运行roslaunch sbg_driver sbg_ellipse.launch
+7. 如果需要看数据，使用rostopic系列命令(自行百度)
+
+

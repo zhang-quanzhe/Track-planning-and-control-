@@ -1,0 +1,17 @@
+<launch>
+	<node pkg="cancontrol_ultra" type="cancontrol_ultra" name="cancontrol_ultra" respawn="true" output="screen"/>
+  
+	<node pkg="ultra_serial_port" type="ultra_publish" name="ultra_publish" respawn="true"/>
+		<rosparam command="load" file="$(find config)/uart_port_baud_rate.yaml" />
+
+
+	<node pkg="car_navigation" type="car_navigation" name="car_navigation" respawn="true" />
+
+	<node pkg="sbg_driver_2" type="ellipse" name="sbg_ellipse" respawn="true" />
+		<rosparam command="load" file="$(find config)/uart_port_baud_rate.yaml" />
+
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d /home/buaa/buaacar_ws/src/config/odom_tf.rviz" required="false"/>
+
+</launch>
+

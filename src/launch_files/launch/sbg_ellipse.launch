@@ -1,0 +1,5 @@
+<launch>
+  <node name="sbg_ellipse" pkg="sbg_driver_2" type="ellipse" output="screen" />
+    <rosparam command="load" file="$(find config)/uart_port_baud_rate.yaml" />
+  
+</launch>

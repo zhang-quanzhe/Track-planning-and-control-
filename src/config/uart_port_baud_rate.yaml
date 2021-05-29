@@ -1,0 +1,6 @@
+ultra_uart_port : /dev/ttyUSB1
+ultra_uart_baud_rate : 9600
+
+
+uart_port : /dev/ttyUSB0
+uart_baud_rate : 115200

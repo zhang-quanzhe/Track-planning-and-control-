@@ -1,0 +1,7 @@
+<launch>
+  <node name="ultra_publish" pkg="ultra_serial_port" type="ultra_publish" respawn="true">
+  <rosparam command="load" file="$(find config)/uart_port_baud_rate.yaml" />
+</node>
+
+ 
+</launch>

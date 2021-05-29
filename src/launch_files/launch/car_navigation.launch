@@ -1,0 +1,10 @@
+<launch>
+
+<include file="$(find launch_files)/launch/sbg_ellipse.launch" />
+
+  <node name="car_navigation" pkg="car_navigation" type="car_navigation" respawn="true" output="screen">
+
+</node>
+
+
+</launch>

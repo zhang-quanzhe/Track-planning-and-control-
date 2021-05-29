@@ -1,0 +1,2 @@
+cancontrol:cancontrol_ultra:car_navigation:config:launch_files:odom_tf:sbg_ros_rec:ultra_serial_port:ultra_sub
+-DCATKIN_DEVEL_PREFIX=/home/ustb814/car/devel -DCMAKE_INSTALL_PREFIX=/home/ustb814/car/install -G Unix Makefiles
